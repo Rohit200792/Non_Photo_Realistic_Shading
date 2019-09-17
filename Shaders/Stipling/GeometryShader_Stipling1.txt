@@ -1,0 +1,29 @@
+#version 430 core
+layout (triangles) in;
+layout (points, max_vertices = 4) out;
+
+in vec3 WorldPos_GS_in;                                                                        
+in vec3 Normal_GS_in; 
+in vec2 TexCoord_GS_in;
+
+out vec3 out_color;
+out vec3 out_pos;
+out vec3 out_normal;
+out vec2 out_uv;
+
+void main() {
+	vec3 out_pos=WorldPos_GS_in;
+	vec3 out_norma=Normal_GS_in;
+	vec2 out_uv=TexCoord_GS_in;
+	
+	gl_Position = gl_in[0].gl_Position;
+	out_color= vec3(1.0, 1.0, 1.0);
+	EmitVertex();	
+	gl_Position = gl_in[1].gl_Position;
+	out_color= vec3(1.0, 1.0, 1.0);
+	EmitVertex();
+	gl_Position = gl_in[2].gl_Position; 
+	out_color= vec3(0.0, 0.0, 0.0);
+	EmitVertex();
+	EndPrimitive();
+}

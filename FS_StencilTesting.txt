@@ -1,0 +1,9 @@
+#version 430 core
+out vec4 gl_FragColor;
+
+in vec2 out_uv;
+
+void main()
+{    
+    gl_FragColor = out_uv;
+}

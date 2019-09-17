@@ -1,0 +1,42 @@
+#version 430
+uniform mat4 matView;
+uniform vec3 lightPos;
+uniform vec3 lightColor;
+uniform vec3 viewPos;
+
+uniform sampler2D diffuseMap;
+
+in vec3 out_color;
+in vec3 out_pos;
+in vec3 out_normal;
+in vec2 out_uv;
+
+
+out vec4 gl_FragColor;
+
+void main(void) {
+	vec3 camPos = viewPos;
+	vec3 lightDir= normalize(lightPos-out_pos);  
+	vec3 viewDir= normalize(camPos-out_pos);
+	vec3 norm= normalize(out_normal);
+	
+	//Get outline
+	float edge_thresh=0.3; //set threshold for edge detection
+	float visiblity=dot(viewDir, norm);
+
+	float edge_detection = (visiblity > edge_thresh) ? 0 : 1; 	//Black color if dot product is smaller than 0.2 else keep the same colors
+	
+	
+	//final color for object
+	vec3 tex_final= texture(diffuseMap, out_uv).rgb;
+	vec3 final_color;
+	if(edge_detection ==0){
+		final_color= out_color; //teapot
+	}else{
+		float scale_origin=0.5;
+		float scale=scale_origin+edge_thresh;
+		float factor= (visiblity+scale_origin)/scale;
+		final_color= factor*out_color; //teapot
+	}
+	gl_FragColor= vec4(final_color, 1.0f);
+}
