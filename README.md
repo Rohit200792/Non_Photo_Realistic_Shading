@@ -7,4 +7,8 @@ The Vertex Shader Files are named as follows: VS_\<Shading Technique\>.txt
   
 The Fragment Shader Files are named as follows: FS_\<Shading Technique\>.txt
 
-A sample output of the implementation can be found in the file NPR.pptx
+Here is a sample output:
+
+![Sample Output](Docs/Teapots.png)
+
+A sample output of the implementation can also be found in the file NPR.pptx
