@@ -11,4 +11,4 @@ Here is a sample output:
 
 ![Sample Output](Docs/Teapots.png)
 
-A sample output of the implementation can also be found in the file NPR.pptx
+A sample output of the implementation can also be found in the file ./Docs/NPR.pptx
