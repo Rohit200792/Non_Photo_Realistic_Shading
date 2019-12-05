@@ -1,6 +1,0 @@
-﻿  glad.c
-  main.cpp
-E:\ASUS ROG\Docs\UofU\MSCS\Spring 2019\CS6610 Interactive Computer Graphics\Final Project\Project Versions\Final_Project_NPR_u1210167\main.cpp(223): warning C4305: 'initializing': truncation from 'double' to 'float'
-E:\ASUS ROG\Docs\UofU\MSCS\Spring 2019\CS6610 Interactive Computer Graphics\Final Project\Project Versions\Final_Project_NPR_u1210167\main.cpp(276): warning C4305: '=': truncation from 'double' to 'float'
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  Final_Project_NPR_u1210167.vcxproj -> E:\ASUS ROG\Docs\UofU\MSCS\Spring 2019\CS6610 Interactive Computer Graphics\Final Project\Project Versions\Final_Project_NPR_u1210167\Debug\Final_Project_NPR_u1210167.exe
