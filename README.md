@@ -1,5 +1,5 @@
 # NPR_Shading
-Non Photorealistic  Shading in OpenGL- Cel, Gooch and Stipling \
+Non Photorealistic  Shading in OpenGL- Cel, Gooch and Stipling
 
 ## Overview
 
@@ -8,6 +8,10 @@ Non-photorealistic rendering is a very broad term in computer graphics. It cover
 The Vertex Shader Files are named as follows: VS_\<Shading Technique\>.txt
   
 The Fragment Shader Files are named as follows: FS_\<Shading Technique\>.txt
+
+## Links
+
+[1. Project Report](./Docs/Project_Report.pdf)
 
 ## Sample Output
 
