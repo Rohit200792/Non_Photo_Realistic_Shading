@@ -1,0 +1,15 @@
+#version 430 core
+
+in vec2 out_uv;
+
+out vec4 glFragcolor;
+
+uniform sampler2D colorTexBuffer;
+
+const float offset = 1.0 / 300.0;  
+
+void main()
+{
+	vec4 tex_color = texture( colorTexBuffer, out_uv );
+    glFragcolor = tex_color;	
+}

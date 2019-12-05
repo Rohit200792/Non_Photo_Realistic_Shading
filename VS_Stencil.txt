@@ -1,0 +1,15 @@
+#version 430 core
+layout (location = 0) in vec3 position;
+layout (location = 2) in vec2 uv;
+
+out vec2 out_uv;
+
+uniform mat4 matModel;
+uniform mat4 matView;
+uniform mat4 matProj;
+
+void main()
+{
+    out_uv = uv;    
+    gl_Position= matProj*matView*matModel*vec4(position.x*0.2, position.y*0.2, position.z*0.2, 1.0);
+}
