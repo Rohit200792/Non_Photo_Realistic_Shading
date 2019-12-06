@@ -238,7 +238,7 @@ int main()
 
 		//// teapot
 		stencilShader.use();
-		float scale = 1.035;
+		double scale = 1.035;
 		model = glm::mat4(1.0f);
 		//Enable object rotation
 		if (rotate_object == 1)
