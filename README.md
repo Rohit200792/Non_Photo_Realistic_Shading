@@ -9,6 +9,9 @@ The Vertex Shader Files are named as follows: VS_\<Shading Technique\>.txt
   
 The Fragment Shader Files are named as follows: FS_\<Shading Technique\>.txt
 
+## Project Build Configurations
+![Sample Output](Docs/Build.png)
+
 ## Links
 
 [1. Project Report](./Docs/Project_Report.pdf)
